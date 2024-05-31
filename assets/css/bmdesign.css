@@ -1,3 +1,17 @@
+:root {
+  --font-family: "Titillium Web", sans-serif;
+  --font-weight-extralight: 200;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
+  --main-color: #1c6bb5;
+  --main-color-hover: #1c6bb5;
+  --secondary-color: #115707;
+  --secondary-color-hover: #115707;
+}
+
 .titillium-web-extralight, .custom-font.extralight {
   font-family: "Titillium Web", sans-serif;
   font-weight: 200;
@@ -62,5 +76,33 @@
   font-family: "Titillium Web", sans-serif;
   font-weight: 700;
   font-style: italic;
+}
+
+.main-color {
+  color: var(--main-color) !important;
+}
+
+.submain-color {
+  color: var(--secondary-color) !important;
+}
+
+.main-bg-color {
+  background-color: var(--main-color) !important;
+}
+
+.submain-bg-color {
+  background-color: var(--secondary-color) !important;
+}
+
+.underline:after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  border-radius: 5px;
+  background: var(--secondary-color);
+  z-index: -1;
 }
 
