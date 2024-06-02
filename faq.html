@@ -46,14 +46,12 @@
                 const themeSwitchers = [].slice.call(document.querySelectorAll('.theme-switcher'));
 
                 if (!themeSwitchers.length) return;
-
                 document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
                     element.classList.remove('active');
                     element.setAttribute('aria-pressed', 'false');
                 });
 
                 for (const themeSwitcher of themeSwitchers) {
-
                     const btnToActivate = themeSwitcher.querySelector('[data-bs-theme-value="' + theme + '"]');
 
                     if (btnToActivate) {
