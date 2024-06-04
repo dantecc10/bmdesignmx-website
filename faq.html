@@ -52,7 +52,6 @@
                 });
                 for (const themeSwitcher of themeSwitchers) {
                     const btnToActivate = themeSwitcher.querySelector('[data-bs-theme-value="' + theme + '"]');
-
                     if (btnToActivate) {
                         btnToActivate.classList.add('active');
                         btnToActivate.setAttribute('aria-pressed', 'true');
